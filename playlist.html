@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Playlist</title>
+    <link rel="stylesheet" href="ply.css" />
+    <style>
+      .playlist-container {
+        max-width: 400px;
+        margin: 40px auto;
+        padding: 24px;
+        background: #181f2a;
+        border-radius: 16px;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+      }
+      .playlist-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #4fc3f7;
+        letter-spacing: 1px;
+      }
+      ul#playlist {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+      }
+      ul#playlist li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 24px;
+        padding: 16px 0;
+        border-bottom: 1px solid #22304a;
+        background: #222e3c;
+        border-radius: 12px;
+      }
+      ul#playlist li:last-child {
+        border-bottom: none;
+      }
+      ul#playlist img {
+        box-shadow: 0 2px 8px #0008;
+        border: 2px solid #4fc3f7;
+        background: #101820;
+      }
+      ul#playlist strong {
+        color: #90caf9;
+        font-size: 1.1em;
+      }
+      audio {
+        filter: invert(1) hue-rotate(180deg) brightness(0.8);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="brand">
+        <div class="first">Rzky</div>
+        <div class="last">Fdh</div>
+      </div>
+      <div class="pilihan">
+        <a href="home.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="../galery.html">Galery</a>
+        <a href="#contact">Contact Me</a>
+        <a href="playlist.html" class="active">Playlist</a>
+      </div>
+    </div>
+    <div class="playlist-container">
+      <h2>Music Playlist</h2>
+      <ul id="playlist">
+        <li>
+          <img src="playlist.jpg" alt="Mangu Cover" style="width: 100px; height: 100px; object-fit: cover; border-radius: 12px; box-shadow: 0 2px 8px #0002" />
+          <div style="text-align: center">
+            <strong>Mangu - Mangu</strong>
+          </div>
+          <audio controls style="width: 180px; margin-top: 8px">
+            <source src="mangu.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
